@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE43FA2927E0C73100E8D522 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43FA2827E0C73100E8D522 /* AppDelegate.swift */; };
+		CE43FA2B27E0C73100E8D522 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43FA2A27E0C73100E8D522 /* SceneDelegate.swift */; };
+		CE43FA2D27E0C73100E8D522 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43FA2C27E0C73100E8D522 /* ViewController.swift */; };
+		CE43FA3027E0C73100E8D522 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE43FA2E27E0C73100E8D522 /* Main.storyboard */; };
+		CE43FA3227E0C76600E8D522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE43FA3127E0C76600E8D522 /* Assets.xcassets */; };
+		CE43FA3527E0C76600E8D522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE43FA3327E0C76600E8D522 /* LaunchScreen.storyboard */; };
+		CE43FA4027E0C76600E8D522 /* TTVFingerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43FA3F27E0C76600E8D522 /* TTVFingerDemoTests.swift */; };
+		CE43FA4A27E0C76600E8D522 /* TTVFingerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43FA4927E0C76600E8D522 /* TTVFingerDemoUITests.swift */; };
+		CE43FA4C27E0C76600E8D522 /* TTVFingerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43FA4B27E0C76600E8D522 /* TTVFingerDemoUITestsLaunchTests.swift */; };
+		CE43FA5927E0C83F00E8D522 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43FA5827E0C83E00E8D522 /* CameraViewController.swift */; };
+		CE43FA5F27E0E4EB00E8D522 /* TTVFingerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE43FA5C27E0E27A00E8D522 /* TTVFingerSDK.framework */; };
+		CE43FA6027E0E4EB00E8D522 /* TTVFingerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE43FA5C27E0E27A00E8D522 /* TTVFingerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE43FA6C27E1187100E8D522 /* data1.bin in Resources */ = {isa = PBXBuildFile; fileRef = CE43FA6A27E1187100E8D522 /* data1.bin */; };
+		CE43FA6D27E1187100E8D522 /* data2.bin in Resources */ = {isa = PBXBuildFile; fileRef = CE43FA6B27E1187100E8D522 /* data2.bin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE43FA3C27E0C76600E8D522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE43FA1D27E0C73000E8D522 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE43FA2427E0C73100E8D522;
+			remoteInfo = TTVFingerDemo;
+		};
+		CE43FA4627E0C76600E8D522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE43FA1D27E0C73000E8D522 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE43FA2427E0C73100E8D522;
+			remoteInfo = TTVFingerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE43FA6127E0E4EB00E8D522 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE43FA6027E0E4EB00E8D522 /* TTVFingerSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE43FA2527E0C73100E8D522 /* TTVFingerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTVFingerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE43FA2827E0C73100E8D522 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE43FA2A27E0C73100E8D522 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE43FA2C27E0C73100E8D522 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE43FA2F27E0C73100E8D522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE43FA3127E0C76600E8D522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE43FA3427E0C76600E8D522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE43FA3627E0C76600E8D522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE43FA3B27E0C76600E8D522 /* TTVFingerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTVFingerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE43FA3F27E0C76600E8D522 /* TTVFingerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTVFingerDemoTests.swift; sourceTree = "<group>"; };
+		CE43FA4527E0C76600E8D522 /* TTVFingerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTVFingerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE43FA4927E0C76600E8D522 /* TTVFingerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTVFingerDemoUITests.swift; sourceTree = "<group>"; };
+		CE43FA4B27E0C76600E8D522 /* TTVFingerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTVFingerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE43FA5827E0C83E00E8D522 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CE43FA5C27E0E27A00E8D522 /* TTVFingerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TTVFingerSDK.framework; sourceTree = "<group>"; };
+		CE43FA5E27E0E35400E8D522 /* TTVFingerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTVFingerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE43FA6A27E1187100E8D522 /* data1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = data1.bin; path = TTVFingerSDK.framework/data1.bin; sourceTree = "<group>"; };
+		CE43FA6B27E1187100E8D522 /* data2.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = data2.bin; path = TTVFingerSDK.framework/data2.bin; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE43FA2227E0C73100E8D522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE43FA5F27E0E4EB00E8D522 /* TTVFingerSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE43FA3827E0C76600E8D522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE43FA4227E0C76600E8D522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE43FA1C27E0C73000E8D522 = {
+			isa = PBXGroup;
+			children = (
+				CE43FA2727E0C73100E8D522 /* TTVFingerDemo */,
+				CE43FA3E27E0C76600E8D522 /* TTVFingerDemoTests */,
+				CE43FA4827E0C76600E8D522 /* TTVFingerDemoUITests */,
+				CE43FA2627E0C73100E8D522 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE43FA2627E0C73100E8D522 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE43FA2527E0C73100E8D522 /* TTVFingerDemo.app */,
+				CE43FA3B27E0C76600E8D522 /* TTVFingerDemoTests.xctest */,
+				CE43FA4527E0C76600E8D522 /* TTVFingerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE43FA2727E0C73100E8D522 /* TTVFingerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CE43FA5E27E0E35400E8D522 /* TTVFingerDemo-Bridging-Header.h */,
+				CE43FA6A27E1187100E8D522 /* data1.bin */,
+				CE43FA6B27E1187100E8D522 /* data2.bin */,
+				CE43FA2827E0C73100E8D522 /* AppDelegate.swift */,
+				CE43FA2A27E0C73100E8D522 /* SceneDelegate.swift */,
+				CE43FA2C27E0C73100E8D522 /* ViewController.swift */,
+				CE43FA5827E0C83E00E8D522 /* CameraViewController.swift */,
+				CE43FA2E27E0C73100E8D522 /* Main.storyboard */,
+				CE43FA3127E0C76600E8D522 /* Assets.xcassets */,
+				CE43FA3327E0C76600E8D522 /* LaunchScreen.storyboard */,
+				CE43FA3627E0C76600E8D522 /* Info.plist */,
+				CE43FA5C27E0E27A00E8D522 /* TTVFingerSDK.framework */,
+			);
+			path = TTVFingerDemo;
+			sourceTree = "<group>";
+		};
+		CE43FA3E27E0C76600E8D522 /* TTVFingerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE43FA3F27E0C76600E8D522 /* TTVFingerDemoTests.swift */,
+			);
+			path = TTVFingerDemoTests;
+			sourceTree = "<group>";
+		};
+		CE43FA4827E0C76600E8D522 /* TTVFingerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE43FA4927E0C76600E8D522 /* TTVFingerDemoUITests.swift */,
+				CE43FA4B27E0C76600E8D522 /* TTVFingerDemoUITestsLaunchTests.swift */,
+			);
+			path = TTVFingerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE43FA2427E0C73100E8D522 /* TTVFingerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE43FA4F27E0C76600E8D522 /* Build configuration list for PBXNativeTarget "TTVFingerDemo" */;
+			buildPhases = (
+				CE43FA2127E0C73100E8D522 /* Sources */,
+				CE43FA2227E0C73100E8D522 /* Frameworks */,
+				CE43FA2327E0C73100E8D522 /* Resources */,
+				CE43FA6127E0E4EB00E8D522 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTVFingerDemo;
+			productName = TTVFingerDemo;
+			productReference = CE43FA2527E0C73100E8D522 /* TTVFingerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE43FA3A27E0C76600E8D522 /* TTVFingerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE43FA5227E0C76600E8D522 /* Build configuration list for PBXNativeTarget "TTVFingerDemoTests" */;
+			buildPhases = (
+				CE43FA3727E0C76600E8D522 /* Sources */,
+				CE43FA3827E0C76600E8D522 /* Frameworks */,
+				CE43FA3927E0C76600E8D522 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE43FA3D27E0C76600E8D522 /* PBXTargetDependency */,
+			);
+			name = TTVFingerDemoTests;
+			productName = TTVFingerDemoTests;
+			productReference = CE43FA3B27E0C76600E8D522 /* TTVFingerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE43FA4427E0C76600E8D522 /* TTVFingerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE43FA5527E0C76600E8D522 /* Build configuration list for PBXNativeTarget "TTVFingerDemoUITests" */;
+			buildPhases = (
+				CE43FA4127E0C76600E8D522 /* Sources */,
+				CE43FA4227E0C76600E8D522 /* Frameworks */,
+				CE43FA4327E0C76600E8D522 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE43FA4727E0C76600E8D522 /* PBXTargetDependency */,
+			);
+			name = TTVFingerDemoUITests;
+			productName = TTVFingerDemoUITests;
+			productReference = CE43FA4527E0C76600E8D522 /* TTVFingerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE43FA1D27E0C73000E8D522 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CE43FA2427E0C73100E8D522 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					CE43FA3A27E0C76600E8D522 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = CE43FA2427E0C73100E8D522;
+					};
+					CE43FA4427E0C76600E8D522 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = CE43FA2427E0C73100E8D522;
+					};
+				};
+			};
+			buildConfigurationList = CE43FA2027E0C73000E8D522 /* Build configuration list for PBXProject "TTVFingerDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE43FA1C27E0C73000E8D522;
+			productRefGroup = CE43FA2627E0C73100E8D522 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE43FA2427E0C73100E8D522 /* TTVFingerDemo */,
+				CE43FA3A27E0C76600E8D522 /* TTVFingerDemoTests */,
+				CE43FA4427E0C76600E8D522 /* TTVFingerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE43FA2327E0C73100E8D522 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE43FA6D27E1187100E8D522 /* data2.bin in Resources */,
+				CE43FA3527E0C76600E8D522 /* LaunchScreen.storyboard in Resources */,
+				CE43FA3227E0C76600E8D522 /* Assets.xcassets in Resources */,
+				CE43FA3027E0C73100E8D522 /* Main.storyboard in Resources */,
+				CE43FA6C27E1187100E8D522 /* data1.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE43FA3927E0C76600E8D522 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE43FA4327E0C76600E8D522 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE43FA2127E0C73100E8D522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE43FA2D27E0C73100E8D522 /* ViewController.swift in Sources */,
+				CE43FA5927E0C83F00E8D522 /* CameraViewController.swift in Sources */,
+				CE43FA2927E0C73100E8D522 /* AppDelegate.swift in Sources */,
+				CE43FA2B27E0C73100E8D522 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE43FA3727E0C76600E8D522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE43FA4027E0C76600E8D522 /* TTVFingerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE43FA4127E0C76600E8D522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE43FA4A27E0C76600E8D522 /* TTVFingerDemoUITests.swift in Sources */,
+				CE43FA4C27E0C76600E8D522 /* TTVFingerDemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE43FA3D27E0C76600E8D522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE43FA2427E0C73100E8D522 /* TTVFingerDemo */;
+			targetProxy = CE43FA3C27E0C76600E8D522 /* PBXContainerItemProxy */;
+		};
+		CE43FA4727E0C76600E8D522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE43FA2427E0C73100E8D522 /* TTVFingerDemo */;
+			targetProxy = CE43FA4627E0C76600E8D522 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE43FA2E27E0C73100E8D522 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE43FA2F27E0C73100E8D522 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE43FA3327E0C76600E8D522 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE43FA3427E0C76600E8D522 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE43FA4D27E0C76600E8D522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE43FA4E27E0C76600E8D522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE43FA5027E0C76600E8D522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JSUUF48N9C;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTVFingerDemo",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TTVFingerDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "fingerdemo camera usage";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttv.fingerdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TTVFingerDemo/TTVFingerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE43FA5127E0C76600E8D522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JSUUF48N9C;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTVFingerDemo",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TTVFingerDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "fingerdemo camera usage";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttv.fingerdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TTVFingerDemo/TTVFingerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE43FA5327E0C76600E8D522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JSUUF48N9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttv.TTVFingerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTVFingerDemo.app/TTVFingerDemo";
+			};
+			name = Debug;
+		};
+		CE43FA5427E0C76600E8D522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JSUUF48N9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttv.TTVFingerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTVFingerDemo.app/TTVFingerDemo";
+			};
+			name = Release;
+		};
+		CE43FA5627E0C76600E8D522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JSUUF48N9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttv.TTVFingerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TTVFingerDemo;
+			};
+			name = Debug;
+		};
+		CE43FA5727E0C76600E8D522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JSUUF48N9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttv.TTVFingerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TTVFingerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE43FA2027E0C73000E8D522 /* Build configuration list for PBXProject "TTVFingerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE43FA4D27E0C76600E8D522 /* Debug */,
+				CE43FA4E27E0C76600E8D522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE43FA4F27E0C76600E8D522 /* Build configuration list for PBXNativeTarget "TTVFingerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE43FA5027E0C76600E8D522 /* Debug */,
+				CE43FA5127E0C76600E8D522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE43FA5227E0C76600E8D522 /* Build configuration list for PBXNativeTarget "TTVFingerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE43FA5327E0C76600E8D522 /* Debug */,
+				CE43FA5427E0C76600E8D522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE43FA5527E0C76600E8D522 /* Build configuration list for PBXNativeTarget "TTVFingerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE43FA5627E0C76600E8D522 /* Debug */,
+				CE43FA5727E0C76600E8D522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE43FA1D27E0C73000E8D522 /* Project object */;
+}
