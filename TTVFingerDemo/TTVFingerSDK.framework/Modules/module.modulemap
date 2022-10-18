@@ -1,6 +1,0 @@
-framework module TTVFingerSDK {
-  umbrella header "TTVFingerSDK.h"
-
-  export *
-  module * { export * }
-}
